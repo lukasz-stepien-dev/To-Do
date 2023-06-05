@@ -1,0 +1,131 @@
+/* Resetowanie domyślnych styli */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styl nagłówka */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Styl głównego kontenera */
+main {
+    padding: 20px;
+    background-color: #E8F5E9;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Styl sekcji tworzenia zadania */
+#section-create-task {
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    animation: fadeIn 0.5s ease;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Styl sekcji zadań */
+#section-tasks {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+#article-search {
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+input[type="search"] {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease;
+}
+
+input[type="submit"] {
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+#task-list {
+    list-style: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease;
+    background-color: #FFFFFF;
+}
+
+.edit-button,
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+    margin-left: 10px;
+    animation: fadeIn 0.5s ease;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #888;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Animacja usuwania zadania */
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.slide-out {
+    animation: slideOut 0.3s ease;
+}
