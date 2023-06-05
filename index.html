@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do Lista</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <header>
@@ -13,24 +14,20 @@
         <form>
             <h2><label for="task-name">Wpisz zadanie:</label></h2>
             <textarea id="task-name"></textarea><br>
-            <input type="submit" value="Dodaj zadanie">
+            <button id="task-submit">Dodaj zadanie</button>
         </form>
     </section>
     <section id="section-tasks">
         <article id="article-search">
-            <form>
-                <label for="search">Wyszukaj: </label>
-                <input type="search" name="search" id="search">
+            <form id="search-form">
+                <label for="search-input">Wyszukaj: </label>
+                <input type="search" name="search" id="search-input">
                 <input type="submit" value="Wyszukaj">
             </form>
         </article>
-        <article class="task">
-            <p class="date">Data: </p>
-            <button>X</button>
-            <p class="description">fdsifs</p>
-            <button>Edytuj</button>
-        </article>
+        <div id="task-list"></div>
     </section>
 </main>
+<script src="scripts/script.js"></script>
 </body>
 </html>
